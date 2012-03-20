@@ -14,3 +14,4 @@ end
 gem 'jquery-rails'
 gem 'mongrel'
 gem 'kaminari'
+gem 'yaml_db'
