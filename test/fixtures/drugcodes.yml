@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  regno: MyString
+  tradename: MyString
+  dgdsfnm: MyString
+  drugname: MyString
+  strength: MyString
+  std_code: MyString
+
+two:
+  regno: MyString
+  tradename: MyString
+  dgdsfnm: MyString
+  drugname: MyString
+  strength: MyString
+  std_code: MyString

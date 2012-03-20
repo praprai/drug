@@ -1,0 +1,37 @@
+<h1>/Drugcode</h1>
+
+<p>
+  <b>Regno</b><br>
+  <%= @drugcode.regno %>
+</p>
+
+<p>
+  <b>Tradename</b><br>
+  <%= @drugcode.tradename %>
+</p>
+
+<p>
+  <b>Dgdsfnm</b><br>
+  <%= @drugcode.dgdsfnm %>
+</p>
+
+<p>
+  <b>Drugname</b><br>
+  <%= @drugcode.drugname %>
+</p>
+
+<p>
+  <b>Strength</b><br>
+  <%= @drugcode.strength %>
+</p>
+
+<p>
+  <b>Std code</b><br>
+  <%= @drugcode.std_code %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', drugcodes_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_drugcode_path(@drugcode), :class => 'btn' %>
+  <%= link_to 'Delete', drugcode_path(@drugcode), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

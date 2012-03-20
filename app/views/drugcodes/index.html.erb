@@ -1,0 +1,33 @@
+<h1>Drugcodes</h1>
+
+<%= paginate @drugcodes %>
+<p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Reg No</th>
+      <th>Drug Name</th>
+      <th>Strength</th>
+      <th>STD_CODE</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @drugcodes.each do |drugcode| %>
+      <tr>
+        <td><%= drugcode.id %></td>
+        <td><%= link_to drugcode.regno, drugcode_path(drugcode) %></td>
+        <td><%= drugcode.drugname %></td>
+        <td><%= drugcode.strength %></td>
+        <td><%= drugcode.std_code %></td>
+        <td>
+          <%= link_to 'Edit', edit_drugcode_path(drugcode), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', drugcode_path(drugcode), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New', new_drugcode_path, :class => 'btn btn-primary' %>
